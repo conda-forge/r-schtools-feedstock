@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/schtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/schtools/schtools_{{ version }}.tar.gz
-  sha256: c6e15e1f0a89d5809e002991d5b9017ae12752c3001125d1a8dbafd614b3140b
+  sha256: b85425e6c2631798f5b3b1575b596bddfa85634b0393cb7e051e8548b824469b
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -45,14 +45,11 @@ test:
 about:
   home: https://CRAN.R-project.org/package=schtools
   license: MIT
-  summary: A collection of useful functions and example code created and used by the Schloss
-    Lab for reproducible microbiome research. Perform common tasks like read files created
-    by mothur <https://mothur.org/>, tidy up your microbiome data, and format R Markdown
-    documents for publication. See the website <http://www.schlosslab.org/schtools/>
+  summary: A collection of useful functions and example code created and used by the Schloss Lab for reproducible microbiome research. Perform common tasks like read files created by mothur <https://mothur.org/>, tidy up your microbiome data, and format R Markdown documents for publication. See the website <http://www.schlosslab.org/schtools/>
     for more information, documentation, and examples.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
