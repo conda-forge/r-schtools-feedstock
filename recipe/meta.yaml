@@ -28,13 +28,17 @@ requirements:
     - r-base
     - r-dplyr
     - r-formatr
+    - r-glue
     - r-rlang
+    - r-stringr
     - r-tidyr
   run:
     - r-base
     - r-dplyr
     - r-formatr
+    - r-glue
     - r-rlang
+    - r-stringr
     - r-tidyr
 
 test:
