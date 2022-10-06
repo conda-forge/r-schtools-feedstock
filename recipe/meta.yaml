@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/schtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/schtools/schtools_{{ version }}.tar.gz
-  sha256: ce2918431c3015869ce8768cd23ae9dddc8aeae2196fdd6f85902ec3cb172bb1
+  sha256: 6ef4401d3997a6e6faf415946169ee6800eac5ee01ef9e8eb4213123e90ac050
 
 build:
   merge_build_host: true  # [win]
