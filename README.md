@@ -1,11 +1,11 @@
-About r-schtools
-================
+About r-schtools-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-schtools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=schtools
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-schtools-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of useful functions and example code created and used by the Schloss Lab for reproducible microbiome research. Perform common tasks like read files created by mothur <https://mothur.org/>, tidy up your microbiome data, and format R Markdown documents for publication. See the website <http://www.schlosslab.org/schtools/> for more information, documentation, and examples.
 
