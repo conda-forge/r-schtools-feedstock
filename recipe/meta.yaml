@@ -1,6 +1,5 @@
 {% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-schtools
@@ -13,8 +12,7 @@ source:
   sha256: 707c027bf92ee25d13582a7b9b6a8df40c9657a7cffc536e59d4e95111a878f8
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
